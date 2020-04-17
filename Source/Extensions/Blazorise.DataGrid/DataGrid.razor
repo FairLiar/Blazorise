@@ -44,7 +44,7 @@
                     @foreach ( var column in Columns )
                     {
                         @if ( !column.Filterable )
-                            continue;
+                            <TableHeaderCell width="@column.Width" />
 
                         @if ( column.ColumnType == DataGridColumnType.Command )
                         {
